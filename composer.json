@@ -1,0 +1,24 @@
+{
+    "name": "webstardev3/customdrv",
+    "description": "Test",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Miroslav Stanojević",
+            "email": "webstardev3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "vlucas/phpdotenv": "^4.0",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {"CustomDrv\\": "CustomDrv/"}
+    },
+    "scripts": {
+        "insert-row": "@php insert-row.php"
+    }
+}
