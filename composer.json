@@ -19,6 +19,15 @@
         "psr-4": {"CustomDrv\\": "CustomDrv/"}
     },
     "scripts": {
-        "insert-row": "@php insert-row.php"
+        "create-database": "@php CustomDrv/demo/migrations/create-database.php",
+        "create-table": "@php CustomDrv/demo/migrations/create-table.php",
+        "create-column": "@php CustomDrv/demo/migrations/create-column.php",
+        "drop-column": "@php CustomDrv/demo/migrations/drop-column.php",
+        "insert-row": "@php CustomDrv/demo/crud/insert-row.php",
+        "update-row": "@php CustomDrv/demo/crud/update-row.php",
+        "retrieve-table-content": "@php CustomDrv/demo/crud/retrieve-table-content.php",
+        "retrieve-table-row": "@php CustomDrv/demo/crud/retrieve-table-row.php",
+        "count-table-rows": "@php CustomDrv/demo/crud/count-table-rows.php",
+        "delete-row": "@php CustomDrv/demo/crud/delete-row.php"
     }
 }
